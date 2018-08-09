@@ -5,11 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 </head>
 <body>
-    <h1>Add a Student</h1>
+    <h1>Add a Student {{a}}</h1>
     <form method="post">
-        <input type="text" name="CHANGE_ME" placeholder="CHANGE ME">
+        <input name = student_name placeholder="Name">
+        <input name = student_year placeholder="Year">
         <br>
-        <input type="submit" value="Submit">
+        <p>did you finish the lab?</p>
+        <br>
+        <input type="radio" name="lab_t"  value="True">
+        <input type="radio" name="lab_f"  value="False">
+
     </form>
 </body>
 </html>
